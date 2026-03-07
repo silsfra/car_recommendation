@@ -35,10 +35,11 @@ body{
     flex-wrap:wrap;
     justify-content:center;
 
-    gap:24px;
+    gap:28px;
 
     padding:40px clamp(20px,5vw,80px);
 }
+
 
 .fcontainer{
     flex:1 1 180px;
@@ -63,7 +64,7 @@ body{
 .fcontainer:hover{
     transform:translateY(-3px);
     box-shadow:0 8px 24px rgba(0,0,0,0.12);
-    border-color:#7a3cff;
+    border-color:#000000;
 }
 
 .fselect{
