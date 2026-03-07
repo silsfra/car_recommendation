@@ -166,8 +166,10 @@ hr{
     padding:30px;
 
     transition:0.3s;
-    z-index:900;
+    z-index:1000;
+
     overflow-y:auto;
+    overscroll-behavior:contain;
 }
 
 #sidebar.open{
