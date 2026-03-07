@@ -155,7 +155,7 @@ hr{
 #sidebar{
     position:fixed;
     top:0;
-    left:-280px;
+    left:0;
 
     width:280px;
     height:100vh;
@@ -165,15 +165,17 @@ hr{
 
     padding:30px;
 
-    transition:0.3s;
+    transition:transform 0.3s ease;
     z-index:1000;
 
     overflow-y:auto;
-    overscroll-behavior:contain;
+
+    transform:translateX(-100%);
 }
 
 #sidebar.open{
-    left:0;
+    transform:translateX(0);
+    box-shadow:8px 0 30px rgba(0,0,0,0.15);
 }
 
 /* PUSH MAIN CONTENT */
