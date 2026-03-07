@@ -66,6 +66,18 @@ body{
     border-color:#7a3cff;
 }
 
+.fselect{
+    width:100%;
+    height:100%;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+    font-size:15px;
+    text-align:center;
+    cursor:pointer;
+}
 
 /* ---------- DIVIDER ---------- */
 
@@ -98,7 +110,6 @@ hr{
 
     gap:40px;
 }
-
 
 /* ---------- CAR CARD ---------- */
 
@@ -160,7 +171,6 @@ hr{
 #sidebar.open{
     left:0;
 }
-
 
 /* PUSH MAIN CONTENT */
 

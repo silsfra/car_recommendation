@@ -2,90 +2,121 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
 
-<title>Serper Electric</title>
-<link rel="icon" type="image/svg+xml" href="assets/raccoon.svg">
+    <title>Serper Electric</title>
+    <link rel="icon" type="image/svg+xml" href="assets/raccoon.svg">
 </head>
 
 <body>
 
-<div id="page">
+    <div id="page">
 
-    <!-- SIDEBAR FILTER -->
-    <div id="sidebar">
-        <h2>Filter</h2>
+        <!-- SIDEBAR FILTER -->
+        <div id="sidebar">
+            <h2>Filter</h2>
 
-        <div class="filter-group">
-            <h4>Brand</h4>
-            <label><input type="checkbox"> Audi</label>
-            <label><input type="checkbox"> Tesla</label>
-            <label><input type="checkbox"> BMW</label>
+            <div class="filter-group">
+                <h4>Brand</h4>
+                <label><input type="checkbox"> Audi</label>
+                <label><input type="checkbox"> Tesla</label>
+                <label><input type="checkbox"> BMW</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Battery</h4>
+                <label><input type="checkbox"> 70 kWh</label>
+                <label><input type="checkbox"> 90 kWh</label>
+            </div>
+
         </div>
 
-        <div class="filter-group">
-            <h4>Battery</h4>
-            <label><input type="checkbox"> 70 kWh</label>
-            <label><input type="checkbox"> 90 kWh</label>
+        <!-- MAIN CONTENT -->
+        <div id="main-content">
+
+            <!-- MENU BUTTON -->
+            <div id="menu-button">
+                <img src="assets/menu-burger.svg" id="menu-icon">
+            </div>
+
+            <div id="header">
+
+                <div id="texting">
+                    <h1>What are you looking for?</h1>
+                </div>
+
+                <div id="filtering">
+
+                    <div class="fcontainer">
+                        <select class="fselect">
+                            <option selected disabled>Type</option>
+                            <option>Local Commuter</option>
+                            <option>Long-Range Cruiser</option>
+                            <option>City Slicher</option>
+                            <option>The All-Rounder</option>
+                        </select>
+                    </div>
+
+                    <div class="fcontainer">
+                        <select class="fselect">
+                            <option selected disabled>Budget (THB)</option>
+                            <option>500k - 1M</option>
+                            <option>1M - 1.5M</option>
+                            <option>1.5M - 2M</option>
+                            <option>2M - 3M</option>
+                            <option>3M - 5M</option>
+                            <option>5M+</option>
+                        </select>
+                    </div>
+
+                    <div class="fcontainer">
+                        <select class="fselect">
+                            <option selected disabled>Battery Capicity</option>
+                            <option>Under 60</option>
+                            <option>60 - 70</option>
+                            <option>70 - 90</option>
+                            <option>More than 90</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div id="content">
+
+                    <div class="carline-container">
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                    </div>
+
+                    <div class="carline-container">
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                    </div>
+
+                    <div class="carline-container">
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main-content">
-
-        <!-- MENU BUTTON -->
-        <div id="menu-button">
-            <img src="assets/menu-burger.svg" id="menu-icon">
-        </div>
-
-        <div id="header">
-
-            <div id="texting">
-                <h1>What are you looking for?</h1>
-            </div>
-
-            <div id="filtering">
-                <div class="fcontainer">Type</div>
-                <div class="fcontainer">Budget</div>
-                <div class="fcontainer">Arai D</div>
-            </div>
-
-            <hr>
-
-            <div id="content">
-
-                <div class="carline-container">
-                    <div class="car-container"></div>
-                    <div class="car-container"></div>
-                    <div class="car-container"></div>
-                </div>
-
-                <div class="carline-container">
-                    <div class="car-container"></div>
-                    <div class="car-container"></div>
-                    <div class="car-container"></div>
-                </div>
-
-                <div class="carline-container">
-                    <div class="car-container"></div>
-                    <div class="car-container"></div>
-                    <div class="car-container"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<script src="JavaScript/filter.js"></script>
+    <script src="JavaScript/filter.js"></script>
 
 </body>
+
 </html>
