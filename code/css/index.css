@@ -1,0 +1,189 @@
+/* ---------- PAGE ---------- */
+
+body{
+    margin:0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background:#f5f7fb;
+}
+
+#main-content{
+    max-width:1400px;
+    margin:auto;
+}
+
+
+/* ---------- HEADER ---------- */
+
+#texting{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px 20px 20px;
+}
+
+#texting h1{
+    font-size:34px;
+    font-weight:600;
+    color:#222;
+}
+
+
+/* ---------- FILTER ---------- */
+
+#filtering{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    gap:24px;
+
+    padding:40px clamp(20px,5vw,80px);
+}
+
+.fcontainer{
+    flex:1 1 180px;
+    max-width:240px;
+
+    height:60px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:white;
+
+    border:1px solid #e6e8ee;
+    border-radius:14px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+
+    transition:all 0.2s ease;
+}
+
+.fcontainer:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 24px rgba(0,0,0,0.12);
+    border-color:#7a3cff;
+}
+
+
+/* ---------- DIVIDER ---------- */
+
+hr{
+    border:none;
+    height:1px;
+    background:#e6e8ee;
+    width:92%;
+    margin:auto;
+}
+
+
+/* ---------- CONTENT ---------- */
+
+#content{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+
+    padding:60px clamp(20px,5vw,80px);
+}
+
+
+/* ---------- CAR ROW ---------- */
+
+.carline-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    gap:40px;
+}
+
+
+/* ---------- CAR CARD ---------- */
+
+.car-container{
+    flex:1 1 280px;
+    max-width:360px;
+
+    height:280px;
+
+    background:white;
+
+    border:1px solid #e6e8ee;
+    border-radius:18px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,0.06);
+
+    transition:all 0.25s ease;
+}
+
+.car-container:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 40px rgba(0,0,0,0.14);
+}
+
+/* MENU BUTTON */
+
+#menu-button{
+    position:fixed;
+    top:20px;
+    left:20px;
+    cursor:pointer;
+    z-index:1000;
+}
+
+#menu-icon{
+    width:28px;
+}
+
+
+/* SIDEBAR */
+
+#sidebar{
+    position:fixed;
+    top:0;
+    left:-280px;
+
+    width:280px;
+    height:100vh;
+
+    background:white;
+    border-right:1px solid #e6e8ee;
+
+    padding:30px;
+
+    transition:0.3s;
+    z-index:900;
+}
+
+#sidebar.open{
+    left:0;
+}
+
+
+/* PUSH MAIN CONTENT */
+
+#main-content{
+    transition:0.3s;
+}
+
+#main-content.shift{
+    margin-left:280px;
+}
+
+
+/* FILTER GROUP */
+
+.filter-group{
+    margin-top:30px;
+}
+
+.filter-group h4{
+    margin-bottom:10px;
+}
+
+.filter-group label{
+    display:block;
+    margin-bottom:8px;
+}
