@@ -1,10 +1,9 @@
-const menuButton = document.getElementById("menu-button");
+const menuIcon = document.getElementById("menu-icon");
 const sidebar = document.getElementById("sidebar");
-const mainContent = document.getElementById("main-content");
+const main = document.getElementById("main-content");
 
-menuButton.addEventListener("click", () => {
-
+menuIcon.addEventListener("click", () => {
     sidebar.classList.toggle("open");
-    mainContent.classList.toggle("shift");
-
+    main.classList.toggle("shift");
+    menuIcon.classList.toggle("shift");
 });
