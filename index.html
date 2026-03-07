@@ -15,15 +15,19 @@
 <body>
 
     <div id="page">
-
+        <!-- FILTER BUTTON -->
         <div id="menu-button">
-            <img src="assets/menu-burger.svg" id="menu-icon">
+            <img src="assets/list.svg" id="menu-icon">
         </div>
 
-        <!-- SIDEBAR FILTER -->
+        <!-- FILTER  SIDEBAR -->
         <div id="sidebar">
-            <h2>Filter</h2>
+            <div id="head-sidebar">
+                <h2>Filter</h2>
+                <img src="assets/cross.svg" id="sidebar-icon-toggle" alt="Filter">
+            </div>
 
+            <!-- BRAND CHECKBOX-->
             <div class="filter-group">
                 <h4>Brand</h4>
                 <label><input type="checkbox" class="check-all"> All</label>
@@ -38,6 +42,7 @@
                 <label><input type="checkbox"> Audi</label>
             </div>
 
+            <!-- STORAGE CHECKBOX -->
             <div class="filter-group">
                 <h4>Storage space (Litre)</h4>
                 <label><input type="checkbox" class="check-all"> All</label>
@@ -56,10 +61,12 @@
 
             <div id="header">
 
+                <!-- TEXT HEADER -->
                 <div id="texting">
                     <h1>What are you looking for?</h1>
                 </div>
 
+                <!-- FILTER  ZONE -->
                 <div id="filtering">
 
                     <div class="fcontainer">
@@ -98,6 +105,7 @@
 
                 <hr>
 
+                <!-- CAR CONTENT -->
                 <div id="content">
 
                     <div class="carline-container">
@@ -126,7 +134,7 @@
 
     </div>
 
-    <script src="JavaScript/sidebarShift.js"></script>
+    <script src="JavaScript/OpenSidebar.js"></script>
     <script src="JavaScript/Allcheckbox.js"></script>
 
 </body>
