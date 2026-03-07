@@ -167,6 +167,7 @@ hr{
 
     transition:0.3s;
     z-index:900;
+    overflow-y:auto;
 }
 
 #sidebar.open{
