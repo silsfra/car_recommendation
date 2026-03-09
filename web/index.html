@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Serper Electric</title>
+    <link rel="icon" type="image/svg+xml" href="assets/raccoon.svg">
+</head>
+
+<body>
+
+    <div id="page">
+        <!-- FILTER BUTTON -->
+        <div id="menu-button">
+            <img src="assets/list.svg" id="menu-icon">
+        </div>
+
+        <!-- FILTER  SIDEBAR -->
+        <div id="sidebar">
+            <div id="head-sidebar">
+                <h2>Filter</h2>
+                <img src="assets/cross.svg" id="sidebar-icon-toggle" alt="Filter">
+            </div>
+
+            <!-- BRAND CHECKBOX-->
+            <div class="filter-group">
+                <h4>Brand</h4>
+                <label><input type="checkbox" class="check-all"> All</label>
+                <label><input type="checkbox"> Tesla</label>
+                <label><input type="checkbox"> Toyota</label>
+                <label><input type="checkbox"> Nissan</label>
+                <label><input type="checkbox"> Honda</label>
+                <label><input type="checkbox"> BMW</label>
+                <label><input type="checkbox"> Volvo</label>
+                <label><input type="checkbox"> BYD</label>
+                <label><input type="checkbox"> MG</label>
+                <label><input type="checkbox"> Audi</label>
+            </div>
+
+            <!-- STORAGE CHECKBOX -->
+            <div class="filter-group">
+                <h4>Storage space (Litre)</h4>
+                <label><input type="checkbox" class="check-all"> All</label>
+                <label><input type="checkbox"> Under 500</label>
+                <label><input type="checkbox"> 500 - 1,000</label>
+                <label><input type="checkbox"> 1,000 - 1,500</label>
+                <label><input type="checkbox"> 1,500 - 2,000</label>
+                <label><input type="checkbox"> More than 2,000</label>
+
+            </div>
+
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div id="main-content">
+
+            <div id="header">
+
+                <!-- TEXT HEADER -->
+                <div id="texting">
+                    <h1>What are you looking for?</h1>
+                </div>
+
+                <!-- FILTER  ZONE -->
+                <div id="filtering">
+
+                    <div class="fcontainer">
+                        <select class="fselect">
+                            <option selected>Type</option>
+                            <option>Local Commuter</option>
+                            <option>Long-Range Cruiser</option>
+                            <option>City Slicher</option>
+                            <option>The All-Rounder</option>
+                        </select>
+                    </div>
+
+                    <div class="fcontainer">
+                        <select class="fselect">
+                            <option selected>Budget (THB)</option>
+                            <option>500k - 1M</option>
+                            <option>1M - 1.5M</option>
+                            <option>1.5M - 2M</option>
+                            <option>2M - 3M</option>
+                            <option>3M - 5M</option>
+                            <option>5M+</option>
+                        </select>
+                    </div>
+
+                    <div class="fcontainer">
+                        <select class="fselect">
+                            <option selected>Battery Capicity</option>
+                            <option>Under 60</option>
+                            <option>60 - 70</option>
+                            <option>70 - 90</option>
+                            <option>More than 90</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- CAR CONTENT -->
+                <div id="content">
+
+                    <div class="carline-container">
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                    </div>
+
+                    <div class="carline-container">
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                    </div>
+
+                    <div class="carline-container">
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                        <div class="car-container"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="JavaScript/OpenSidebar.js"></script>
+    <script src="JavaScript/Allcheckbox.js"></script>
+
+</body>
+
+</html>
